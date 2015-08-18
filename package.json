@@ -27,6 +27,15 @@
   "scripts": {
     "test": "grunt test"
   },
+
+  "dependencies": {
+    "nconf" : "0.7.1",
+    "request": "2.36.0",
+    "protractor-screenshot-reporter": "0.0.5",
+    "jasmine-reporters"  : "~1.0.1",
+    "colors" : "1.0.3"
+  },
+
   "devDependencies": {
     "grunt": "~0.3.17"
   },
