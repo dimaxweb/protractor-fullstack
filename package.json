@@ -20,7 +20,11 @@
       "url": "https://github.com/Dmitry.Mogilko/revisor/blob/master/LICENSE-MIT"
     }
   ],
+
+  "license": "MIT",
+
   "main": "lib/revisor",
+
   "engines": {
     "node": ">= 0.6.0"
   },
@@ -37,7 +41,7 @@
   },
 
   "devDependencies": {
-    "grunt": "~0.3.17"
+    "grunt": "~0.4.2"
   },
   "keywords": []
 }

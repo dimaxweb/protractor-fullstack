@@ -1,7 +1,21 @@
 {
-  "webServer"  : "http://permid.org",
-   "errorLevel"  : 1000,
-  "validUserName" :  "nelly.terman@thomsonreuters.com",
-  "validUserPassword" :  "Said2000"
+
+  "webServer"  : "http://localhost:8003",
+  "genericTests" : {
+
+        "links"  :{
+            "pattern" : "http://||https://",
+            "excludePattern" : "",
+            "excludeSpesificLinks" : []
+        },
+
+        "console" : {
+
+        },
+
+        "spellCheker" : {
+
+        }
+   }
 
 }

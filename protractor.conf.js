@@ -1,6 +1,7 @@
 /**
  * Created by Dmitry.Mogilko on 12/8/2014.
  */
+var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
 
 exports.config = {
 
@@ -15,5 +16,13 @@ exports.config = {
     jasmineNodeOpts: {
         showColors: true,
         defaultTimeoutInterval: 300000
-    }
-};
+    },
+
+    onPrepare: function() {
+        require('jasmine-reporters');
+        jasmine.getEnv().addReporter(
+            new jasmine.JUnitXmlReporter(null, true, true, 'reports/')
+        );
+
+    },
+}
