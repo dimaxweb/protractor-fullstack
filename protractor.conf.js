@@ -1,7 +1,10 @@
 /**
  * Created by Dmitry.Mogilko on 12/8/2014.
  */
-var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
+
+
+var path  = require('path')
+var appConfig  = require(path.resolve(__dirname,'configuration/nconfWrapper.js'));
 
 exports.config = {
 
@@ -18,11 +21,30 @@ exports.config = {
         defaultTimeoutInterval: 300000
     },
 
-    onPrepare: function() {
-        require('jasmine-reporters');
-        jasmine.getEnv().addReporter(
-            new jasmine.JUnitXmlReporter(null, true, true, 'reports/')
-        );
+    framework: 'jasmine2',
 
-    },
+
+    onPrepare: function() {
+
+
+        var jasmineReporters = require('jasmine-reporters');
+
+        var reportsConfig =  appConfig.get('reports').jasmineReporters;
+
+        console.log("jasmineReporters configuration is :",reportsConfig);
+
+        for(var reporterKey in reportsConfig){
+
+            if(reportsConfig[reporterKey].isEnabled){
+
+                console.log("Enabling the reporter :%s . Configuration : %j ",reporterKey,reportsConfig[reporterKey]);
+
+                var reporterInstance  = eval("new "  + reporterKey  +  "(reportsConfig[reporterKey])");
+
+                jasmine.getEnv().addReporter(reporterInstance);
+            }
+        }
+
+
+    }
 }

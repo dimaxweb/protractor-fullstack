@@ -1,7 +1,54 @@
 {
 
-  "webServer"  : "http://localhost:8003",
-  "genericTests" : {
+  "webServer"  : "https://permid.org",
+
+  "reportsFolder"  : "",
+
+  "reports" : {
+
+    "jasmineReporters" : {
+
+      "jasmineReporters.JUnitXmlReporter ": {
+        "isEnabled"  : true,
+        "savePath": "reports/junit",
+        "consolidateAll"   : true,
+        "consolidate"  : true,
+        "filePrefix"  : "juintresults",
+        "useDotNotation"  : true,
+        "package"  : "Jasmine Results"
+      },
+
+      "jasmineReporters.NUnitXmlReporter ": {
+        "isEnabled"  : true,
+        "savePath": "reports/nunit",
+        "filename" : "nunitresults.xml",
+        "reportName"  : "Jasmine Results"
+      },
+
+      "jasmineReporters.TapReporter"  : {
+        "isEnabled"  : false
+      },
+
+      "jasmineReporters.TeamCityReporter"  : {
+        "isEnabled"  : false
+      },
+
+      "jasmineReporters.TerminalReporter"  : {
+        "isEnabled"  : false
+      }
+
+
+
+
+
+    }
+
+
+
+  },
+
+
+  "genericSanityTests" : {
 
         "links"  :{
             "pattern" : "http://||https://",
@@ -17,5 +64,6 @@
 
         }
    }
+
 
 }

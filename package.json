@@ -20,28 +20,26 @@
       "url": "https://github.com/Dmitry.Mogilko/revisor/blob/master/LICENSE-MIT"
     }
   ],
-
   "license": "MIT",
-
   "main": "lib/revisor",
-
   "engines": {
     "node": ">= 0.6.0"
   },
   "scripts": {
     "test": "grunt test"
   },
-
   "dependencies": {
-    "nconf" : "0.7.1",
+    "nconf": "0.7.1",
     "request": "2.36.0",
-    "protractor-screenshot-reporter": "0.0.5",
-    "jasmine-reporters"  : "~1.0.1",
-    "colors" : "1.0.3"
+    "jasmine-reporters": "~1.0.1",
+    "colors": "1.0.3"
   },
 
   "devDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": "~0.4.2",
+    "jasmine-reporters": "^2.0.7",
+    "protractor-jasmine2-screenshot-reporter": "^0.1.7",
+    "protractor-screenshot-reporter": "0.0.5"
   },
   "keywords": []
 }
