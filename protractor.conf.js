@@ -3,48 +3,38 @@
  */
 
 
-var path  = require('path')
-var appConfig  = require(path.resolve(__dirname,'configuration/nconfWrapper.js'));
+var path = require('path');
 
-exports.config = {
+var appConfig = require(path.resolve(__dirname, 'configuration/nconfWrapper.js'));
 
-    seleniumAddress: 'http://localhost:4444/wd/hub',
-
-    specs: ['lib/runner.js'],
-
-    multiCapabilities: [{
-        'browserName': 'chrome'
-    }],
-
-    jasmineNodeOpts: {
-        showColors: true,
-        defaultTimeoutInterval: 300000
-    },
-
-    framework: 'jasmine2',
+var protractorConfig = appConfig.get('protractrorConfig');
 
 
-    onPrepare: function() {
+/*
+ Configure the reports
+ */
+protractorConfig.onPrepare = function () {
 
+    var jasmineReporters = require('jasmine-reporters');
 
-        var jasmineReporters = require('jasmine-reporters');
+    var reportsConfig = appConfig.get('reports').jasmineReporters;
 
-        var reportsConfig =  appConfig.get('reports').jasmineReporters;
+    console.log("jasmineReporters configuration is :", reportsConfig);
 
-        console.log("jasmineReporters configuration is :",reportsConfig);
+    for (var reporterKey in reportsConfig) {
 
-        for(var reporterKey in reportsConfig){
+        if (reportsConfig[reporterKey].isEnabled) {
 
-            if(reportsConfig[reporterKey].isEnabled){
+            console.log("Enabling the reporter :%s . Configuration : %j ", reporterKey, reportsConfig[reporterKey]);
 
-                console.log("Enabling the reporter :%s . Configuration : %j ",reporterKey,reportsConfig[reporterKey]);
+            var reporterInstance = eval("new " + reporterKey + "(reportsConfig[reporterKey])");
 
-                var reporterInstance  = eval("new "  + reporterKey  +  "(reportsConfig[reporterKey])");
-
-                jasmine.getEnv().addReporter(reporterInstance);
-            }
+            jasmine.getEnv().addReporter(reporterInstance);
         }
-
-
     }
+
 }
+
+exports.config = protractorConfig;
+
+
