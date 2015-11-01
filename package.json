@@ -36,10 +36,12 @@
   },
 
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "jasmine-reporters": "^2.0.7",
-    "protractor-jasmine2-screenshot-reporter": "^0.1.7",
-    "protractor-screenshot-reporter": "0.0.5"
+    "grunt": "~0.4.2"
+
   },
-  "keywords": []
+  "keywords": [
+    "protractor",
+    "seed",
+    "biolerplate"
+  ]
 }

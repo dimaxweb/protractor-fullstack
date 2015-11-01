@@ -47,11 +47,15 @@
   },
   "genericSanityTests": {
     "links": {
+      "isEnabled"  : true,
       "pattern": "http://||https://",
-      "excludePattern": "",
-      "excludeSpesificLinks": []
+      "ignoreLinks": []
+
     },
     "console": {
+      "isEnabled"  : true,
+      "errors" : {"isEnabled" : true,"level" : 5000,"ignoreByText"  : []},
+      "warnings"  :  {"isEnabled" : false,"level" : 5000,"ignoreByText"  : []}
     }
   }
 }

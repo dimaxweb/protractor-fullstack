@@ -7,11 +7,15 @@ var path = require('path');
 
 var appConfig = require(path.resolve(__dirname, 'configuration/nconfWrapper.js'));
 
+/*
+   Load protractor config from the application configuration
+ */
+
 var protractorConfig = appConfig.get('protractrorConfig');
 
 
 /*
- Configure the reports
+ Configure the reports from configuration
  */
 protractorConfig.onPrepare = function () {
 
