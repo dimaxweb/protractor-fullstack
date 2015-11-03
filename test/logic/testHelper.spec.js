@@ -40,10 +40,6 @@ describe('Test Helper test the correctness of helper methods', function() {
             expect(endsWithFileName).toBe(true);
         });
 
-        browser.debugger();
-
-
-
 
     });
 
