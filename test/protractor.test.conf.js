@@ -6,7 +6,7 @@
 
 exports.config = {
     "seleniumAddress ": "http://localhost:4444/wd/hub",
-    "specs": ["logic/testHelper.spec.js"],
+    "specs": ["logic/*.spec.js"],
     "multiCapabilities": [
         {
             "browserName": "chrome"
@@ -17,6 +17,10 @@ exports.config = {
         "showColors": true,
         "defaultTimeoutInterval": 300000
     },
+
+
+
+
     "framework": "jasmine2"
 
 }

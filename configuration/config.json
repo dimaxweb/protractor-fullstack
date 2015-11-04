@@ -45,17 +45,10 @@
       }
     }
   },
-  "genericSanityTests": {
-    "links": {
-      "isEnabled"  : true,
-      "pattern": "http://||https://",
-      "ignoreLinks": []
-
-    },
-    "console": {
-      "isEnabled"  : true,
-      "errors" : {"isEnabled" : true,"level" : 5000,"ignoreByText"  : []},
-      "warnings"  :  {"isEnabled" : false,"level" : 5000,"ignoreByText"  : []}
-    }
+  "ConsolePlugin" : {
+    "isEnabled": true,
+    "errors": {"isEnabled": true, "level" : {"name": "SEVERE"}, "excludeByText": []},
+    "warnings": {"isEnabled": false, "level" : {"name": "WARNING"}, "excludeByText": []},
+    "info": {"isEnabled": false, "level" : {"name": "WARNING"}, "includeByText": []}
   }
 }
