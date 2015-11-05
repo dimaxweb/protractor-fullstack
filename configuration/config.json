@@ -1,5 +1,6 @@
 {
   "webServer": "https://permid.org",
+
   "protractrorConfig": {
     "seleniumAddress ": "http://localhost:4444/wd/hub",
     "specs": ["lib/runner.js"],
@@ -46,11 +47,30 @@
       }
     }
   },
+
+  "logging": {
+    "transports"  : {
+      "Console"  : {
+        "level"  : "info"
+      },
+      "File" : {
+        "colorize": true,
+        "filename": "logs/test.log",
+        "handleExceptions": true,
+        "level": "info",
+        "maxFiles": 3,
+        "maxsize":10485760
+
+      }
+    }
+
+  },
+
   "ConsolePlugin" : {
     "chrome"  : {
       "isEnabled": true,
-      "SEVERE": {"isEnabled": true, "level" : {"name": "SEVERE"}, "excludeByText": ["Test Ignore  :"]},
-      "WARNING": {"isEnabled": false, "level" : {"name": "WARNING"}, "excludeByText": []}
+      "SEVERE": {"type" : "error", "isEnabled": true, "level" : {"name": "SEVERE"}, "excludeByText": ["Test Ignore  :"]},
+      "WARNING": {"type" : "warning","isEnabled": false, "level" : {"name": "WARNING"}, "excludeByText": []}
     }
   }
 }

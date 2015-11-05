@@ -5,7 +5,7 @@
 
 var path = require('path');
 
-var appConfig = require(path.resolve(__dirname, 'configuration/nconfWrapper.js'));
+var appConfig = require(path.resolve(__dirname, 'configuration/appConfig.js'));
 
 /*
    Load protractor config from the application configuration

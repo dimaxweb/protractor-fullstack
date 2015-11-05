@@ -33,12 +33,12 @@
     "request": "2.36.0",
     "jasmine-reporters": "~1.0.1",
     "colors": "1.0.3",
-    "q" : "1.4.1"
+    "q": "1.4.1",
+    "protractor" : "2.5.1"
   },
-
   "devDependencies": {
-    "grunt": "~0.4.2"
-
+    "grunt": "~0.4.2",
+    "winston": "^2.1.0"
   },
   "keywords": [
     "protractor",
