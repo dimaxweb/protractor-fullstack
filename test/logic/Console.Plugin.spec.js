@@ -41,13 +41,16 @@ describe('Console Plugin tests', function () {
 
         browser.executeScript("console.error('Test Ignore  :')");
 
+        browser.executeScript("console.warn('Test Ignore  :')");
+
 
         var config  = {
 
-            "isEnabled": true,
-            "errors": {"isEnabled": true, level : {"name": "SEVERE"}, "excludeByText": ["Test Ignore  :"]},
-            "warnings": {"isEnabled": false, level : {"name": "WARNING"}, "excludeByText": []},
-            "info": {"isEnabled": false, level : {"name": "WARNING"}, "includeByText": []}
+            "chrome"  : {
+                "isEnabled": true,
+                "SEVERE": {"isEnabled": true, level : {"name": "SEVERE"}, "excludeByText": ["Test Ignore  :"]},
+                "WARNING": {"isEnabled": false, level : {"name": "WARNING"}, "excludeByText": []}
+            }
 
 
         }
