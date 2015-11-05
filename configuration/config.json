@@ -57,7 +57,7 @@
         "colorize": true,
         "filename": "logs/test.log",
         "handleExceptions": true,
-        "level": "info",
+        "level": "error",
         "maxFiles": 3,
         "maxsize":10485760
 
