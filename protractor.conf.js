@@ -6,9 +6,10 @@
 var path = require('path');
 
 var appConfig = require(path.resolve(__dirname, 'configuration/appConfig.js'));
+var Logger = require('./lib/logger');
 
 /*
-   Load protractor config from the application configuration
+ Load protractor config from the application configuration
  */
 
 var protractorConfig = appConfig.get('protractrorConfig');
@@ -19,23 +20,31 @@ var protractorConfig = appConfig.get('protractrorConfig');
  */
 protractorConfig.onPrepare = function () {
 
-    var jasmineReporters = require('jasmine-reporters');
+    var allReportsConfig = appConfig.get('reports');
 
-    var reportsConfig = appConfig.get('reports').jasmineReporters;
+    if (allReportsConfig) {
 
-    console.log("jasmineReporters configuration is :", reportsConfig);
+        var jasmineReporters = require('jasmine-reporters');
 
-    for (var reporterKey in reportsConfig) {
+        var reportsConfig = allReportsConfig.jasmineReporters;
 
-        if (reportsConfig[reporterKey].isEnabled) {
+        Logger.info("jasmineReporters configuration is :", reportsConfig);
 
-            console.log("Enabling the reporter :%s . Configuration : %j ", reporterKey, reportsConfig[reporterKey]);
+        if (reportsConfig) {
+            for (var reporterKey in reportsConfig) {
 
-            var reporterInstance = eval("new " + reporterKey + "(reportsConfig[reporterKey])");
+                if (reportsConfig[reporterKey].isEnabled) {
 
-            jasmine.getEnv().addReporter(reporterInstance);
+                    Logger.info("Enabling the reporter :%s . Configuration : %j ", reporterKey, reportsConfig[reporterKey]);
+
+                    var reporterInstance = eval("new " + reporterKey + "(reportsConfig[reporterKey])");
+
+                    jasmine.getEnv().addReporter(reporterInstance);
+                }
+            }
         }
     }
+
 
 }
 

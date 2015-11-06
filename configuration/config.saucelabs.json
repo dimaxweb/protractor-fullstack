@@ -1,0 +1,135 @@
+{
+  "webServer": "https://permid.org",
+
+  "protractrorConfig": {
+
+    "specs": ["lib/runner.js"],
+
+    "multiCapabilities": [
+
+      {
+        "name": "you-project-name e2e Test 1280x1024 W7 chrome (Protractor)",
+        "browserName": "chrome",
+        "platform": "Windows 7",
+        "screen-resolution": "1280x1024"
+      },
+
+      {
+        "name": "you-project-name e2e Test 1280x1024 W8 chrome (Protractor)",
+        "browserName": "chrome",
+        "platform": "Windows 8",
+        "screen-resolution": "1280x1024"
+      },
+
+      {
+        "name": "you-project-name e2e Test 1024x768 LINUX chrome (Protractor)",
+        "browserName": "chrome",
+        "platform": "LINUX",
+        "screen-resolution": "1024x768"
+      },
+
+      {
+        "name": "you-project-name e2e Test 1024x768 MAC chrome (Protractor)",
+        "browserName": "chrome",
+        "platform": "MAC",
+        "screen-resolution": "1024x768"
+      },
+
+
+
+      {
+        "name": "you-project-name e2e Test 1280x1024 W7 firefox (Protractor)",
+        "browserName": "firefox",
+        "platform": "Windows 7",
+        "screen-resolution": "1280x1024"
+      },
+
+      {
+        "name": "you-project-name e2e Test 1280x1024 W8 firefox (Protractor)",
+        "browserName": "firefox",
+        "platform": "Windows 8",
+        "screen-resolution": "1280x1024"
+      },
+
+      {
+        "name": "you-project-name e2e Test 1024x768 LINUX firefox (Protractor)",
+        "browserName": "firefox",
+        "platform": "LINUX",
+        "screen-resolution": "1024x768"
+      },
+
+      {
+        "name": "you-project-name e2e Test 1024x768 MAC firefox (Protractor)",
+        "browserName": "firefox",
+        "platform": "MAC",
+        "screen-resolution": "1024x768"
+      },
+
+
+
+      {
+        "name": "you-project-name e2e Test 1280x1024 W7 safari (Protractor)",
+        "browserName": "safari",
+        "platform": "Windows 7",
+        "screen-resolution": "1280x1024"
+      },
+
+      {
+        "name": "you-project-name e2e Test 1024x768 MAC safari (Protractor)",
+        "browserName": "safari",
+        "platform": "MAC",
+        "screen-resolution": "1024x768"
+      },
+
+
+      {
+        "name": "you-project-name e2e Test 1280x1024 W7 IE (Protractor)",
+        "browserName": "internet explorer",
+        "platform": "Windows 7",
+        "screen-resolution": "1280x1024"
+      },
+
+      {
+        "name": "you-project-name e2e Test 1280x1024 W8 IE (Protractor)",
+        "browserName": "internet explorer",
+        "platform": "Windows 8",
+        "screen-resolution": "1280x1024"
+      }
+
+    ],
+
+
+    "sauceUser": "dmitry-mogilko",
+    "sauceKey": "1b26c906-f494-4904-a4b4-737d4bf6a11c"
+
+
+  },
+
+
+
+  "logging": {
+    "transports"  : {
+      "Console"  : {
+        "level"  : "info"
+      },
+      "File" : {
+        "colorize": true,
+        "filename": "logs/test.log",
+        "handleExceptions": true,
+        "level": "error",
+        "maxFiles": 3,
+        "maxsize":10485760
+
+      }
+    }
+
+  },
+
+  "ConsolePlugin" : {
+    "chrome"  : {
+      "isEnabled": true,
+      "SEVERE": {"type" : "error", "isEnabled": true, "level" : {"name": "SEVERE"}, "excludeByText": ["Test Ignore  :"]},
+      "WARNING": {"type" : "warning","isEnabled": false, "level" : {"name": "WARNING"}, "excludeByText": []}
+    }
+  }
+}

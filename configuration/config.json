@@ -2,67 +2,12 @@
   "webServer": "https://permid.org",
 
   "protractrorConfig": {
-    "seleniumAddress ": "http://localhost:4444/wd/hub",
-    "specs": ["lib/runner.js"],
-    "multiCapabilities": [
-      {
-        "browserName": "chrome"
-      },
-      {
-        "browserName": "firefox"
-      }
-    ],
+
     "jasmineNodeOpts": {
       "showColors": true,
       "defaultTimeoutInterval": 300000
     },
     "framework": "jasmine2"
-
-  },
-  "reports": {
-    "jasmineReporters": {
-      "jasmineReporters.JUnitXmlReporter ": {
-        "isEnabled": true,
-        "savePath": "reports/junit",
-        "consolidateAll": true,
-        "consolidate": true,
-        "filePrefix": "juintresults",
-        "useDotNotation": true,
-        "package": "Jasmine Results"
-      },
-      "jasmineReporters.NUnitXmlReporter ": {
-        "isEnabled": true,
-        "savePath": "reports/nunit",
-        "filename": "nunitresults.xml",
-        "reportName": "Jasmine Results"
-      },
-      "jasmineReporters.TapReporter": {
-        "isEnabled": false
-      },
-      "jasmineReporters.TeamCityReporter": {
-        "isEnabled": false
-      },
-      "jasmineReporters.TerminalReporter": {
-        "isEnabled": false
-      }
-    }
-  },
-
-  "logging": {
-    "transports"  : {
-      "Console"  : {
-        "level"  : "info"
-      },
-      "File" : {
-        "colorize": true,
-        "filename": "logs/test.log",
-        "handleExceptions": true,
-        "level": "error",
-        "maxFiles": 3,
-        "maxsize":10485760
-
-      }
-    }
 
   },
 
