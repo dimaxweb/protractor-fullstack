@@ -8,14 +8,9 @@
       "defaultTimeoutInterval": 300000
     },
 
-    "sauceUser": "dmitry-mogilko",
-    "sauceKey": "1b26c906-f494-4904-a4b4-737d4bf6a11c",
-    "sauceConnect"  : {
-      "path" : "C:\\sc-4.3.11-win32\\bin\\sc.exe",
-      "arguments" : {
+    "sauceUser": "your-project-name",
+    "sauceKey": "access-key",
 
-      }
-    },
 
     "framework": "jasmine2"
 
