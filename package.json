@@ -39,6 +39,7 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "jasmine-reporters": "^2.0.7",
+    "sauce-connect-launcher": "^0.13.0",
     "winston": "^2.1.0"
   },
   "keywords": [

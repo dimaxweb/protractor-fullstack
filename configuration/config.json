@@ -1,5 +1,5 @@
 {
-  "webServer": "https://permid.org",
+  "webServer": "http://localhost:9000",
 
   "protractrorConfig": {
 
@@ -7,6 +7,16 @@
       "showColors": true,
       "defaultTimeoutInterval": 300000
     },
+
+    "sauceUser": "dmitry-mogilko",
+    "sauceKey": "1b26c906-f494-4904-a4b4-737d4bf6a11c",
+    "sauceConnect"  : {
+      "path" : "C:\\sc-4.3.11-win32\\bin\\sc.exe",
+      "arguments" : {
+
+      }
+    },
+
     "framework": "jasmine2"
 
   },
