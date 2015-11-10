@@ -12,6 +12,22 @@ describe('Test Helper test the correctness of helper methods', function() {
         return str.indexOf(suffix, str.length - suffix.length) !== -1;
     }
 
+
+    it("Test goTo method",function(done){
+        var url  = 'http://localhost:9000'
+        testHelper.goToUrl('http://localhost:9000');
+        browser.getCurrentUrl().then(function(actualUrl) {
+
+            /*
+                /#/ is added by angular in our case
+             */
+            expect(url +  '/#/').toEqual(actualUrl);
+            done();
+        });
+
+    })
+
+
     it('SaveScreenShort absolute and relative file path',function() {
 
         browser.get('http://localhost:9000');
