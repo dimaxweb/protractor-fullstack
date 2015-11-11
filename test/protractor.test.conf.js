@@ -24,6 +24,16 @@ exports.config = {
 
 
 
-    "framework": "jasmine2"
+    "framework": "jasmine2",
+
+    onPrepare  : function(){
+        /*
+         add custom locators
+         */
+        require('../lib/jasmine/locators.js');
+
+
+
+    }
 
 }
