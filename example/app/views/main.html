@@ -1,18 +1,30 @@
 <div class="hero-unit">
 
-  <h1>'Allo, 'Allo!</h1>
+  <h1>Example page </h1>
 
-  <p>You now have</p>
 
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+
+
+  <div id="foo"></div>
+
+
+  <!---Form submit with file upload-->
+
 
   <input type="file" id="fileUploadInput" style="width:200px">
 
-  <div id="foo"></div>
+
+  <!--end :form submit--->
+
+  <!---Hover over link --->
+  <a href="#" id="showMenuLink" ng-mouseover="showMenu=true" ng-mouseleave="showMenu=false" ng-init="showMenu=false">Hover over me!</a>
+  <div id="menu" data-ng-show="showMenu">
+    <div><a href="#">Option 1 </a></div>
+    <div><a href="#">Option 2 </a></div>
+    <div><a href="#">Option 3 </a></div>
+  </div>
+
+  <!---end : hover links-->
 
 
 </div>

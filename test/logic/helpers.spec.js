@@ -15,7 +15,8 @@ describe('Test Helper test the correctness of helper methods', function() {
 
     it("Test goTo method",function(done){
         var url  = 'http://localhost:9000'
-        testHelper.goToUrl('http://localhost:9000');
+        testHelper.goToUrl(url);
+
         browser.getCurrentUrl().then(function(actualUrl) {
 
             /*
@@ -78,12 +79,60 @@ describe('Test Helper test the correctness of helper methods', function() {
 
     });
 
-    it("Test by.dataHook custom locator",function(){
-        var elem = element(by.dataHook("testHook"));
-        var elemNotExists = element(by.dataHook("testHookNotExists"));
-        expect(elem).not.toBe(null);
-        expect(elemNotExists).toBe(null);
+
+
+    //TODO   : check why fails sometime
+    it("Should simulate hover / mouseMove and mouse out events and display element on mouse over and hide on mouse out",function(){
+
+        testHelper.goToUrl("http://localhost:9000");
+
+        var menuLink = element(by.css('#showMenuLink'));
+        var menu = element(by.css('#menu'));
+
+        testHelper.DOM.elementMouseMove(menuLink);
+
+        browser.debugger();
+
+
+
+
+
+
     });
+
+    it("Cookies methods test",function(done){
+        testHelper.goToUrl("http://localhost:9000");
+
+        testHelper.cookies.add({
+            name : "test",
+            value  : "test"
+        }).then(function(){
+            testHelper.cookies.get("test").then(function(cookie){
+                expect(cookie.name).toEqual("test");
+                expect(cookie.value).toEqual("test");
+               // done();
+            })
+        });
+
+        //test deleteAll and getAll
+
+
+        testHelper.cookies.deleteAll().then(function(){
+            testHelper.cookies.getAll().then(function(cookies){
+                expect(cookies.length).toEqual(0);
+                done();
+            });
+        });
+
+
+
+
+
+
+
+
+    });
+
 
 
 
