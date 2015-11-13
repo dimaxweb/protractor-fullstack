@@ -91,11 +91,7 @@ describe('Test Helper test the correctness of helper methods', function() {
 
         testHelper.DOM.elementMouseMove(menuLink);
 
-        browser.debugger();
-
-
-
-
+        //browser.debugger();
 
 
     });
@@ -125,15 +121,21 @@ describe('Test Helper test the correctness of helper methods', function() {
         });
 
 
-
-
-
-
-
-
     });
 
 
+    it("Wait to visible and invisible conditions in blocking mode",function(){
+
+        // Waits for the element with id 'madeVisible' to be visible on the dom.
+        browser.executeScript("setTimeout(function(){document.getElementById('madeVisible').style.display='block';},2000)");
+        testHelper.DOM.waitForElementToBeVisible(element(by.css("#madeVisible"),5000));
+        expect(element(by.css("#madeVisible")).isDisplayed()).toBe(true);
+
+        // Waits for the element with id 'madeInVisible' to be  invisible on the dom.
+        browser.executeScript("setTimeout(function(){document.getElementById('madeInVisible').style.display='none';},2000)");
+        testHelper.DOM.waitForElementToBeInVisible(element(by.css("#madeInVisible"),5000));
+        expect(element(by.css("#madeInVisible")).isDisplayed()).toBe(false);
+    });
 
 
 });
