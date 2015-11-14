@@ -20,6 +20,12 @@ if ('development' == app.get('env')) {
 
 app.get('/test', routes.index);
 
+app.get('/nonAngularPage',function(req,res){
+
+  console.log("Dirname:",__dirname)
+  res.sendfile(path.join(__dirname, '..', 'app','nonAngularPage.html'));
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
