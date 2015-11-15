@@ -14,7 +14,7 @@ exports.config = {
 
     "specs": ["spec/*.js"],
 
-    suites  : { "nonAngularPage" : "spec/nonAngular.js","testConsoleForErrors" : "spec/testConsoleForErrors.js","javascriptVariable" : "spec/javascriptVariable.js"},
+    suites  : { "nonAngularPage" : "spec/switchToNonAngular.js","testConsoleForErrors" : "spec/testConsoleForErrors.js","interactWithClientJavascript" : "spec/interactWithClientJavascript.js"},
 
 
     "multiCapabilities": [
