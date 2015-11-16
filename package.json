@@ -29,12 +29,13 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "nconf": "0.7.1",
-    "request": "2.36.0",
-    "jasmine-reporters": "^2.0.7",
     "colors": "1.0.3",
+    "jasmine-reporters": "^2.0.7",
+    "lodash-node": "^3.10.1",
+    "nconf": "0.7.1",
+    "protractor": "2.5.1",
     "q": "1.4.1",
-    "protractor": "2.5.1"
+    "request": "2.36.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
