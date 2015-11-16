@@ -1,27 +1,61 @@
-# revisor
+# Revisor
 
-Test your site for errors with protractor
+Battle hardened boilerplate for quickly integrating  Protractor tests in your AngularJS application.
 
-## Getting Started
-Install the module with: `npm install revisor`
+![alt tag](https://github.com/dimaxweb/revisor/blob/master/revisor.jpg)
+ 
 
-```javascript
-var revisor = require('revisor');
-revisor.awesome(); // "awesome"
-```
+## Installation
 
-## Documentation
-_(Coming soon)_
+git clone https://github.com/dimaxweb/revisor
+npm install
+
+
+## Usage
+
+
+
+## Tests
+Configure and run the example application :
+
+cd example
+npm install
+grunt server
+
+Run tests
+protractor tests/protractor.test.conf
+
 
 ## Examples
-_(Coming soon)_
+
+Configure and run the example application :
+
+cd example
+npm install
+grunt server
+
+Run tests
+protractor howtos/protractor.howtos.conf
+
+
+
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/gruntjs/grunt).
 
-## Release History
-_(Nothing yet)_
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## History
+
+TODO: Write history
+
+## Credits
+
+TODO: Write credits
 
 ## License
-Copyright (c) 2015 Dmitry Mogilko  
-Licensed under the MIT license.
+
+MIT
