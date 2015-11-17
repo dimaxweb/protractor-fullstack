@@ -1,6 +1,6 @@
 # Revisor
 
-Battle hardened boilerplate for quickly integrating  Protractor tests inside your AngularJS application.
+### *Battle hardened boilerplate for quickly integrating  Protractor tests inside your AngularJS application.*
 
 ![alt tag](https://github.com/dimaxweb/revisor/blob/master/revisor.jpg)
 
@@ -10,8 +10,8 @@ Battle hardened boilerplate for quickly integrating  Protractor tests inside you
 Starting the end to end testing project can be very time consuming task even with a such great tools like Protractor.
  
 
-The minimum functionality required to succesfully run end to end testing with Protractor , as well as 'how to' examples and helper library to keep you code DRY 
-are included in boilerplate.
+The minimum functionality required to successfully run end to end testing with Protractor , as well as 'how to' examples and helper library to keep you code DRY 
+are included in this  boilerplate project.
 
 *   Flexible configuration using [nconf](https://github.com/indexzero/nconf) in order to be able to run different configurations on development , production and any custom environment. 
 
@@ -19,18 +19,17 @@ are included in boilerplate.
 
 *   Integration with [SauceLabs](https://saucelabs.com)  - to easily test against variety of browsers.
   
-*   Integrated reports inside (5 jasmine-reporters)  -   
+*   Integrated reports . 5 [jasmine-reporters](https://github.com/larrymyers/jasmine-reporters) . Can be configured per environment.   
  
-*   Helpers library containing more than 20 useful functions. 
+*   [helpers.js](/lib/util/helpers.js) - containing more than 20 useful functions. 
  
-*   ConsolePlugin - to identify possible errors by inspecting console during the tests . Can be configured per environment.
+*   [ConsolePlugin](/lib/util/ConsolePlugin.js) - to identify possible errors by inspecting console during the tests . Can be configured per environment.
 
-*   How to examples   - to save your time searching over the internet.
+*   [How to examples](/howtos)   - to save your time searching over the internet.
   
 ## Installation
 
 ### Prerequisites
-Your need the bellow Nodejs packages to be installed globally :
 [Grunt-Cli](https://github.com/gruntjs/grunt-cli),[Protractor](https://github.com/angular/protractor) and [Bower](http://bower.io) need to be installed globally.
 
 ``` sh 
@@ -55,14 +54,21 @@ $ npm install
 
 ### Configuration
 
+
 ### Reports
 
-### ConsolePlugin
 
 ### SauceLabs
 
+
 ### helpers.js
 
+
+### ConsolePlugin
+
+
+
+### Scripts to run the test application
 
 
 
