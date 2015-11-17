@@ -27,11 +27,20 @@ are included in boilerplate.
 
 *   How to examples   - to save your time searching over the internet.
   
-   
-  
- 
-
 ## Installation
+
+### Prerequisites
+Your need the bellow Nodejs packages to be installed globally :
+[Grunt-Cli](https://github.com/gruntjs/grunt-cli),[Protractor](https://github.com/angular/protractor) and [Bower](http://bower.io) need to be installed globally.
+
+``` sh 
+
+npm install -g grunt-cli protractor bower
+
+```
+
+
+### Revisor installation
 
 ```sh
 
@@ -44,31 +53,64 @@ $ npm install
 
 ## Usage
 
+### Configuration
+
+### Reports
+
+### ConsolePlugin
+
+### SauceLabs
+
+### helpers.js
+
+
+
 
 
 ## Tests
-Configure and run the example application :
 
-cd example
-npm install
-grunt server
+
+
+
+### Configure and run the example application :
+
+```sh
+
+
+$ npm install
+
+$ bower install
+ 
+$ grunt server 
+
+```
 
 Run tests
+
+```sh
+
 protractor tests/protractor.test.conf
 
+```
 
-## Examples
+### Examples
 
 Configure and run the example application :
 
-cd example
-npm install
-grunt server
+```sh
+
+$ git clone https://github.com/dimaxweb/revisor
+
+$ npm install
+
+```
 
 Run tests
+```sh
+
 protractor howtos/protractor.howtos.conf
 
-
+```
 
 
 ## Contributing
@@ -79,14 +121,7 @@ protractor howtos/protractor.howtos.conf
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
 
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
 
 ## License
-
 MIT

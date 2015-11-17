@@ -30,18 +30,18 @@
   },
   "dependencies": {
     "colors": "1.0.3",
-    "jasmine-reporters": "^2.0.7",
     "lodash-node": "^3.10.1",
     "nconf": "0.7.1",
     "protractor": "2.5.1",
     "q": "1.4.1",
-    "request": "2.36.0"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.2",
+    "request": "2.36.0",
     "jasmine-reporters": "^2.0.7",
     "sauce-connect-launcher": "^0.13.0",
     "winston": "^2.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2"
+
   },
   "keywords": [
     "protractor",
