@@ -57,33 +57,22 @@ We provided flexible wrapper over [nconf](https://github.com/indexzero/nconf) wh
 and also add your own configuration files following conventions and industry recommendations (using environment variables)
 for configuring the NODEJS applications.
  
- 
- 
- ''' 
- 
- 
- 1.config.json,
- 2.'config.' + 'NODE_ENV' + '.json',
- 3.'config.' + 'NODE_ENV' + '.' + 'USER' + '.json'
- 
- '''
-  
-
-
-Your can add more logic use or use more environment variables in  [configuration/appConfig.js](configuration/appConfig.js) to make it even more flexible.  
-
++  config.json,
++ 'config.' + 'NODE_ENV' + '.json',
++ 'config.' + 'NODE_ENV' + '.' + 'USER' + '.json'
  
 
-Example : 
-
-'''js
+Your can add more logic use or use more environment variables in  [configuration/appConfig.js](configuration/appConfig.js) 
+to make it even more flexible.  
+ 
+```js
 
 var appConfig = require(path.resolve(__dirname, 'configuration/appConfig.js'));
 
 //get url of the web server url in your tests
 var webServerUrl  = appConfig.get('webServerUrl');
 
-'''
+```
 
 
 ### Reports
@@ -95,7 +84,7 @@ Each report provider can be configured per environment , disabled or enabled.
 Example : 
 configuration/config.development.json 
 
-'''json
+```json
 
 "reports": {
     "jasmineReporters": {
@@ -126,7 +115,7 @@ configuration/config.development.json
     }
   },
 
-'''
+```
 
 ### SauceLabs
 
@@ -138,11 +127,11 @@ SauceLabs Connect utility.
   
 Running the bellow command will do all the job behind the scenes :
 
-'''sh
+```sh
 
 node /lib/saucelabs-connect.js
 
-'''  
+```  
 
 
 
