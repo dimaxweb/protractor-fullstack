@@ -7,7 +7,7 @@
 
 # Description
 
-Starting the end to end testing project can be very time consuming task even with a such great tools like Protractor.
+Starting the end to end testing project can be very time consuming task even with a such great tools as Protractor.
  
 
 The minimum functionality required to successfully run end to end testing with Protractor , as well as 'how to' examples and helper library to keep you code DRY 
@@ -125,7 +125,7 @@ IMPORTANT :
 In order to be able to test sites in local intranet , behind the firewall or just the localhost with Sauce Labs - your will to establish tunnel connection to Sauce Labs with
 SauceLabs Connect utility. 
   
-Running the bellow command will do all the job behind the scenes :
+Running the bellow command will  download the Sauce Labs connector in first run and then will start it with your account credentials. 
 
 ```sh
 
@@ -143,7 +143,9 @@ Please look inside the [ConsolePlugin.spec.js](test/logic/ConsolePlugin.spec.js)
 
 
 ### Scripts to run the test application
-For your convenience we provided  
+Scripts for Window / Linux to start the protractor process together with setting environment variables are included in
+[/run](/run) folder. 
+ 
 
 
 ## Tests
