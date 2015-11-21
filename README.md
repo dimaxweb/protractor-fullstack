@@ -7,7 +7,7 @@
 
 # Description
 
-Starting the end to end testing project can be very time consuming task even with a such great tools as Protractor.
+Starting the end to end testing project can be very time consuming task even with a such great tool as Protractor.
  
 
 The minimum functionality required to successfully run end to end testing with Protractor , as well as 'how to' examples and helper library to keep you code DRY 
@@ -19,7 +19,7 @@ are included in this  boilerplate project.
 
 *   Integration with [SauceLabs](https://saucelabs.com)  - to easily test against variety of browsers.
   
-*   Integrated reports [jasmine-reporters](https://github.com/larrymyers/jasmine-reporters) . 
+*   Reports for test results. [jasmine-reporters](https://github.com/larrymyers/jasmine-reporters) are integrated inside.
  
 *   [helpers.js](/lib/util/helpers.js) - containing more than 20 useful functions. 
  
@@ -120,12 +120,12 @@ configuration/config.development.json
 ### SauceLabs
 
 [SauceLabs](https://saucelabs.com) integration can be done thorough configuration.
-Fully functional [example](configuration/config.saucelabs.json) (need to provide your user name and password in configuration). 
-IMPORTANT :
-In order to be able to test sites in local intranet , behind the firewall or just the localhost with Sauce Labs - your will to establish tunnel connection to Sauce Labs with
+Fully functional [example](configuration/config.saucelabs.json) (need to provide your user name and password in configuration).   
+IMPORTANT:  
+In order to be able to test sites in local intranet , behind the firewall or just the **localhost** with Sauce Labs - your will to establish tunnel connection to Sauce Labs with
 SauceLabs Connect utility. 
-  
-Running the bellow command will  download the Sauce Labs connector in first run and then will start it with your account credentials. 
+
+Running the bellow command will do all the work for you (download the Sauce Labs connector in first run and then will start it with your account credentials from configuration file) 
 
 ```sh
 
@@ -143,7 +143,7 @@ Please look inside the [ConsolePlugin.spec.js](test/logic/ConsolePlugin.spec.js)
 
 
 ### Scripts to run the test application
-Scripts for Window / Linux to start the protractor process together with setting environment variables are included in
+Scripts for Window and Linux to start the protractor process together with setting environment variables are included in
 [/run](/run) folder. 
  
 
@@ -183,7 +183,8 @@ $ npm install
 
 ```
 
-Run tests
+Run the example tests :
+
 ```sh
 
 protractor howtos/protractor.howtos.conf
