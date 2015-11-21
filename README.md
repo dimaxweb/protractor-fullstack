@@ -15,8 +15,6 @@ are included in this  boilerplate project.
 
 *   Flexible configuration using [nconf](https://github.com/indexzero/nconf) in order to be able to run different configurations on development , production and any custom environment. 
 
-*   [Winston logger](https://github.com/winstonjs/winston) wrapper .
-
 *   Integration with [SauceLabs](https://saucelabs.com)  - to easily test against variety of browsers.
   
 *   Reports for test results. [jasmine-reporters](https://github.com/larrymyers/jasmine-reporters) are integrated inside.
@@ -24,6 +22,8 @@ are included in this  boilerplate project.
 *   [helpers.js](/lib/util/helpers.js) - containing more than 20 useful functions. 
  
 *   [ConsolePlugin](/lib/util/ConsolePlugin.js) - to identify possible errors by inspecting console during the tests .
+
+*   [Winston logger](https://github.com/winstonjs/winston) wrapper .
 
 *   [How to examples](/howtos)   - to save your time searching over the internet.
   
