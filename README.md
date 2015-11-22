@@ -1,13 +1,13 @@
 # Revisor
 
-### *Battle hardened boilerplate for quickly integrating  Protractor tests inside your AngularJS application.*
+### *Battle hardened boilerplate for quickly starting the Protractor test project*
 
 ![alt tag](https://github.com/dimaxweb/revisor/blob/master/revisor.jpg)
 
 
 # Description
 
-Starting the end to end testing project can be very time consuming task even with a such great tool as Protractor.
+Everything you need for starting the end to end testing project can be very time consuming task even with a such great tool as Protractor.
  
 
 The minimum functionality required to successfully run end to end testing with Protractor , as well as 'how to' examples and helper library to keep you code DRY 
