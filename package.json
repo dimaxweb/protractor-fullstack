@@ -1,27 +1,26 @@
 {
-  "name": "revisor",
+  "name": "protractor-fullstack",
   "description": "Test your site for errors with protractor",
   "version": "0.1.0",
-  "homepage": "https://github.com/Dmitry.Mogilko/revisor",
+  "homepage": "https://github.com/Dmitry.Mogilko/protractor-fullstack",
   "author": {
     "name": "Dmitry Mogilko",
     "email": "dimitry323@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Dmitry.Mogilko/revisor.git"
+    "url": "git://github.com/Dmitry.Mogilko/protractor-fullstack.git"
   },
   "bugs": {
-    "url": "https://github.com/Dmitry.Mogilko/revisor/issues"
+    "url": "https://github.com/Dmitry.Mogilko/protractor-fullstack/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/Dmitry.Mogilko/revisor/blob/master/LICENSE-MIT"
+      "url": "https://github.com/Dmitry.Mogilko/protractor-fullstack/blob/master/LICENSE-MIT"
     }
   ],
   "license": "MIT",
-  "main": "lib/revisor",
   "engines": {
     "node": ">= 0.6.0"
   },

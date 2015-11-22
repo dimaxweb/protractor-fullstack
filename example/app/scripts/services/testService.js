@@ -6,7 +6,7 @@ angular.module('myApp').factory('apiService', function () {
         getTestData  : function(){
           return {
             id : 10,
-            name  : "revisor"
+            name  : "protractor-fullstack"
           }
         }
       }

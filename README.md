@@ -1,8 +1,8 @@
-# Revisor
+# protractor-fullstack
 
 ### *Battle hardened boilerplate for quickly starting the Protractor test project*
 
-![alt tag](https://github.com/dimaxweb/revisor/blob/master/revisor.jpg)
+![alt tag](https://github.com/dimaxweb/protractor-fullstack/blob/master/protractor-fullstack.jpg)
 
 
 # Description
@@ -38,11 +38,11 @@ npm install -g grunt-cli protractor bower
 
 ```
 
-### Revisor installation
+### protractor-fullstack installation
 
 ```sh
 
-$ git clone https://github.com/dimaxweb/revisor
+$ git clone https://github.com/dimaxweb/protractor-fullstack
 
 $ npm install
 
@@ -177,7 +177,7 @@ Configure and run the example application :
 
 ```sh
 
-$ git clone https://github.com/dimaxweb/revisor
+$ git clone https://github.com/dimaxweb/protractor-fullstack
 
 $ npm install
 
