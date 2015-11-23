@@ -154,6 +154,7 @@ Scripts for Window and Linux to start the protractor process together with setti
 
 ```sh
 
+$ cd example
 
 $ npm install
 
@@ -183,7 +184,7 @@ $ npm install
 
 ```
 
-Run the example tests :
+How to examples :
 
 ```sh
 
