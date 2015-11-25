@@ -27,45 +27,13 @@ describe('Console Plugin tests', function () {
 
         Q.when(genericTestInst.getApplicationErrors()).then(function (errors) {
             done();
-            expect(errors.length).toEqual(1);
+            expect(errors.length).toEqual(3);
 
         });
 
     });
 
-    it("Should ignore error when error text defined to be ignored", function (done) {
 
-        browser.get('http://localhost:9000');
-
-        browser.waitForAngular();
-
-        browser.executeScript("console.error('Test Ignore  :')");
-
-        browser.executeScript("console.warn('Test Ignore  :')");
-
-
-        var config  = {
-
-            "chrome"  : {
-                "isEnabled": true,
-                "SEVERE": {"isEnabled": true, level : {"name": "SEVERE"}, "excludeByText": ["Test Ignore  :"]},
-                "WARNING": {"isEnabled": false, level : {"name": "WARNING"}, "excludeByText": []}
-            }
-
-
-        }
-
-        var consolePluginInstance = new ConsolePlugin(config);
-
-
-        Q.when(consolePluginInstance.getApplicationErrors()).then(function (errors) {
-            done();
-            expect(errors.length).toEqual(0);
-
-        });
-
-
-    });
 
 });
 
