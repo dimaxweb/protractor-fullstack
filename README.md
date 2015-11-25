@@ -139,6 +139,8 @@ node /lib/saucelabs-connect.js
 Please look inside the [helpers.spec.js](test/logic/helpers.spec.js) to the the examples of usage.
 
 ### ConsolePlugin
+Many bugs are not visible form first look and sometime not visible at : javascript errors , not found javascript and css  resources,
+,etc ... The majority of this errors and warnings are available on browser console.With the help of this module it is easy to monitor errors and warnings on browser console during our test and also to specify if fail test or not.     
 Please look inside the [ConsolePlugin.spec.js](test/logic/ConsolePlugin.spec.js) for examples of usage.
 
 

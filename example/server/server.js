@@ -20,10 +20,10 @@ if ('development' == app.get('env')) {
 
 app.get('/test', routes.index);
 
-app.get('/nonAngularPage',function(req,res){
+app.get('/pricing.html',function(req,res){
 
   console.log("Dirname:",__dirname)
-  res.sendfile(path.join(__dirname, '..', 'app','nonAngularPage.html'));
+  res.sendfile(path.join(__dirname, '..', 'app','views','pricing.html'));
 });
 
 http.createServer(app).listen(app.get('port'), function(){
