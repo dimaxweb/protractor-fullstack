@@ -15,11 +15,11 @@ describe('Show cases of helpers dom interactions', function() {
 
     it("Open new window with not angular context -- wait for element ",function(){
 
-            helpers.goToUrl("http://127.0.0.1:9000/nonAngularPage",{ignoreSynchronization : true,waitForAngular  : false});
+            helpers.goToUrl("http://127.0.0.1:9000/pricing.html",{ignoreSynchronization : true,waitForAngular  : false});
 
             helpers.switchToNewWindow();
 
-            var newElement  = $('#newElement');
+            var newElement  = $('#pricingMain');
 
             helpers.DOM.waitElementToBePresent(newElement,5000);
 

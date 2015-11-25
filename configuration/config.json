@@ -19,7 +19,7 @@
   "ConsolePlugin" : {
     "chrome"  : {
       "isEnabled": true,
-      "SEVERE": {"type" : "error", "isEnabled": true, "level" : {"name": "SEVERE"}, "excludeByText": ["Test Ignore  :"]},
+      "SEVERE": {"type" : "error", "isEnabled": true, "level" : {"name": "SEVERE"}, "excludeByText": []},
       "WARNING": {"type" : "warning","isEnabled": false, "level" : {"name": "WARNING"}, "excludeByText": []}
     }
   }

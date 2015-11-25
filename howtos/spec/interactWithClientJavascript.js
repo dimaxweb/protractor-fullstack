@@ -30,7 +30,7 @@ describe('Interact with client side script', function() {
 
 
 
-        var angularBoundVariable = element(by.id('angularVarTest')).evaluate('angularVarTest');
+        var angularBoundVariable = element(by.id('angularVarTest')).evaluate('angularScopeValue');
 
         /*
             the value defined in    :  example/app/scripts/controllers\main.js
