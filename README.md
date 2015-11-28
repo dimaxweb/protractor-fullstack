@@ -7,11 +7,14 @@
 
 # Description
 
-Everything you need for starting the end to end testing project can be very time consuming task even with a such great tool as Protractor.
+ Starting the end to end testing project can be very time consuming task even with a such great tool as Protractor.
+ Need a lot of technologies to be bundled together in a right and flexible way.
  
 
 The minimum functionality required to successfully run end to end testing with Protractor , as well as 'how to' examples and helper library to keep you code DRY 
 are included in this  boilerplate project.
+
+*   Base library and examples in order to create the [Page Objects](http://martinfowler.com/bliki/PageObject.html) quickly.
 
 *   Flexible configuration using [nconf](https://github.com/indexzero/nconf) in order to be able to run different configurations on development , production and any custom environment. 
 
@@ -50,6 +53,15 @@ $ npm install
 
 
 ## Usage
+
+###  [Page Objects](http://martinfowler.com/bliki/PageObject.html).
+
+Please see the [HomePage.js]() and [HomePage.spec.js] examples.
+
+We integrated with nice package called [astrolabe](https://github.com/stuplum/astrolabe) having everything
+
+needed to start creating the Page Objects for Protractor tests.
+
 
 ### Configuration
 
