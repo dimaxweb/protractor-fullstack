@@ -36,9 +36,4 @@ describe('Home page tests', function() {
 
 
 
-
-
-
-
-
     });
