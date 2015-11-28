@@ -8,10 +8,6 @@
       "defaultTimeoutInterval": 300000
     },
 
-    "sauceUser": "your-project-name",
-    "sauceKey": "access-key",
-
-
     "framework": "jasmine2"
 
   },

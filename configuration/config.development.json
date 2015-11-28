@@ -4,7 +4,7 @@
   "protractrorConfig": {
 
     "seleniumAddress ": "http://localhost:4444/wd/hub",
-    "specs": ["lib/runner.js"],
+    "specs": ["spec/*.js"],
     "multiCapabilities": [
       {
         "browserName": "chrome"
