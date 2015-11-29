@@ -41,13 +41,34 @@ npm install -g grunt-cli protractor bower
 
 ```
 
-### protractor-fullstack installation
+### protractor-fullstack install and run  : 
+
+First ensure the application under test is running : 
+ 
+ ```sh
+ 
+ $ cd example
+ 
+ $ npm install
+ 
+ $ bower install
+  
+ $ grunt server 
+ 
+ ```
+
 
 ```sh
+
+$ cd your-test-folder
 
 $ git clone https://github.com/dimaxweb/protractor-fullstack
 
 $ npm install
+
+$ protractor protractor.conf.js 
+
+
 
 ```
 
@@ -164,7 +185,8 @@ Scripts for Window and Linux to start the protractor process together with setti
 
 ## Tests
 
-### Configure and run the application under test examples :
+
+First ensure the application under test is running : 
 
 ```sh
 
