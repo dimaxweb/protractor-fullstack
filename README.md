@@ -217,5 +217,6 @@ protractor howtos/protractor.howtos.conf
 
 
 
+
 ## License
-MIT
+We believe that mean should be free and easy to integrate within your AngularJS projects so we chose [The MIT License](http://opensource.org/licenses/MIT)
