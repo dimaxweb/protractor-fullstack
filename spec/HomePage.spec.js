@@ -25,14 +25,30 @@ describe('Home page tests', function() {
     });
 
     it("Navigation tests",function() {
-        var navigationBar = homePage.navigationBar;
-        navigationBar.findElements(by.css('a')).then(function(navigationLinks){
-            expect(navigationLinks.length).toBeGreaterThan(0);
-        })
+
+        homePage.navigationLinks.then(function(links) {
+            expect(links.length).toBeGreaterThan(0);
+        });
 
 
 
     });
+
+    it("Other pages menu is available",function(){
+
+        homePage.openMenu();
+
+        var moreLinksContainer = homePage.moreLinksContainer;
+        expect(moreLinksContainer.isDisplayed()).toBeTruthy();
+
+        browser.debugger();
+    });
+
+
+
+
+
+
 
 
 
