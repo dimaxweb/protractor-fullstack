@@ -8,6 +8,8 @@
       "defaultTimeoutInterval": 300000
     },
 
+    "specs": ["spec/*.js"],
+
     "framework": "jasmine2"
 
   },

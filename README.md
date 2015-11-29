@@ -56,11 +56,11 @@ $ npm install
 
 ###  [Page Objects](http://martinfowler.com/bliki/PageObject.html).
 
-Please see the [HomePage.js]() and [HomePage.spec.js] examples.
+Please see the [HomePage.js](/page-object/HomePage.js) and [HomePage.spec.js](/spec/HomePage.spec.js) examples.
 
-We integrated with nice package called [astrolabe](https://github.com/stuplum/astrolabe) having everything
+We integrated with nice package called -  [astrolabe](https://github.com/stuplum/astrolabe) . Package has everything
 
-needed to start creating the Page Objects for Protractor tests.
+needed to start creating the  custom Page Objects .
 
 
 ### Configuration
@@ -164,7 +164,7 @@ Scripts for Window and Linux to start the protractor process together with setti
 
 ## Tests
 
-### Configure and run the example application :
+### Configure and run the application under test examples :
 
 ```sh
 
@@ -186,9 +186,9 @@ protractor tests/protractor.test.conf
 
 ```
 
-### Examples
+### How to examples
 
-Configure and run the example application :
+
 
 ```sh
 
