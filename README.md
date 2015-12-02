@@ -1,6 +1,6 @@
 # protractor-fullstack
 
-### *Battle hardened boilerplate for quickly starting the Protractor test project*
+### *Battle hardened boilerplate / ecosystem  for quickly starting Protractor test project*
 
 ![alt tag](https://github.com/dimaxweb/protractor-fullstack/blob/master/protractor-fullstack.jpg)
 
@@ -8,11 +8,11 @@
 # Description
 
  Starting the end to end testing project can be very time consuming task even with a such great tool as Protractor.
- Need a lot of technologies to be bundled together in a right and flexible way.
+ This boilerplate has intention to provide the minimum ecosystem required to successfully run and maintain the e2e test project.
+    
+ 
  
 
-The minimum functionality required to successfully run end to end testing with Protractor , as well as 'how to' examples and helper library to keep you code DRY 
-are included in this  boilerplate project.
 
 *   Base library and examples in order to create the [Page Objects](http://martinfowler.com/bliki/PageObject.html) quickly.
 
