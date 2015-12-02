@@ -10,10 +10,6 @@
  Starting the end to end testing project can be very time consuming task even with a such great tool as Protractor.
  This boilerplate has intention to provide the minimum ecosystem required to successfully run and maintain the e2e test project.
     
- 
- 
-
-
 *   Base library and examples in order to create the [Page Objects](http://martinfowler.com/bliki/PageObject.html) quickly.
 
 *   Flexible configuration using [nconf](https://github.com/indexzero/nconf) in order to be able to run different configurations on development , production and any custom environment. 
