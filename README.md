@@ -22,7 +22,7 @@
  
 *   [ConsolePlugin](/lib/util/ConsolePlugin.js) - to identify possible errors by inspecting console during the tests .
 
-*   [Winston logger](https://github.com/winstonjs/winston) wrapper .
+*   [Winston logger](https://github.com/winstonjs/winston) wrapper to quickly troubleshoot errors in your tests. 
 
 *   [How to examples](/howtos)   - to save your time searching over the internet.
   
